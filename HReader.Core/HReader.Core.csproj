@@ -2,6 +2,65 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>HReader</Authors>
+    <Company>HReader</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.1.2-alpha</Version>
+    <AssemblyVersion>0.1.2.0</AssemblyVersion>
+    <FileVersion>0.1.2.0</FileVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Storage\Queries\Delete\Entries.sql" />
+    <None Remove="Storage\Queries\Delete\Entry.sql" />
+    <None Remove="Storage\Queries\Insert\Artist.sql" />
+    <None Remove="Storage\Queries\Insert\ArtistEntry.sql" />
+    <None Remove="Storage\Queries\Insert\Character.sql" />
+    <None Remove="Storage\Queries\Insert\CharacterEntry.sql" />
+    <None Remove="Storage\Queries\Insert\Entry.sql" />
+    <None Remove="Storage\Queries\Insert\Page.sql" />
+    <None Remove="Storage\Queries\Insert\Series.sql" />
+    <None Remove="Storage\Queries\Insert\SeriesEntry.sql" />
+    <None Remove="Storage\Queries\Insert\Tag.sql" />
+    <None Remove="Storage\Queries\Insert\TagEntry.sql" />
+    <None Remove="Storage\Queries\Schema.sql" />
+    <None Remove="Storage\Queries\Select\EntryArtists.sql" />
+    <None Remove="Storage\Queries\Select\EntryCharacters.sql" />
+    <None Remove="Storage\Queries\Select\EntryCount.sql" />
+    <None Remove="Storage\Queries\Select\EntryPage.sql" />
+    <None Remove="Storage\Queries\Select\EntryPages.sql" />
+    <None Remove="Storage\Queries\Select\EntrySeries.sql" />
+    <None Remove="Storage\Queries\Select\EntryTags.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Storage\Queries\Delete\Entries.sql" />
+    <EmbeddedResource Include="Storage\Queries\Delete\Entry.sql" />
+    <EmbeddedResource Include="Storage\Queries\Insert\Artist.sql" />
+    <EmbeddedResource Include="Storage\Queries\Insert\ArtistEntry.sql" />
+    <EmbeddedResource Include="Storage\Queries\Insert\Character.sql" />
+    <EmbeddedResource Include="Storage\Queries\Insert\CharacterEntry.sql" />
+    <EmbeddedResource Include="Storage\Queries\Insert\Entry.sql" />
+    <EmbeddedResource Include="Storage\Queries\Insert\Page.sql" />
+    <EmbeddedResource Include="Storage\Queries\Insert\Series.sql" />
+    <EmbeddedResource Include="Storage\Queries\Insert\SeriesEntry.sql" />
+    <EmbeddedResource Include="Storage\Queries\Insert\Tag.sql" />
+    <EmbeddedResource Include="Storage\Queries\Insert\TagEntry.sql" />
+    <EmbeddedResource Include="Storage\Queries\Schema.sql" />
+    <EmbeddedResource Include="Storage\Queries\Select\EntryArtists.sql" />
+    <EmbeddedResource Include="Storage\Queries\Select\EntryCharacters.sql" />
+    <EmbeddedResource Include="Storage\Queries\Select\EntryCount.sql" />
+    <EmbeddedResource Include="Storage\Queries\Select\EntryPage.sql" />
+    <EmbeddedResource Include="Storage\Queries\Select\EntryPages.sql" />
+    <EmbeddedResource Include="Storage\Queries\Select\EntrySeries.sql" />
+    <EmbeddedResource Include="Storage\Queries\Select\EntryTags.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HReader.Base" Version="0.1.2-alpha" />
+    <PackageReference Include="HReader.Builtin.Native" Version="0.1.2-alpha" />
+    <PackageReference Include="HReader.Builtin.Web" Version="0.1.2-alpha" />
+    <PackageReference Include="Microsoft.Data.SQLite" Version="2.0.0" />
+  </ItemGroup>
 
 </Project>
